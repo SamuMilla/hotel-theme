@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @layer components{
+    .active-state{
+        @apply after:bg-blue-500 after:w-2 after:h-2 after:absolute after:-bottom-1 after:rounded-full after:transform after:translate-x-2/4 after:right-2/4;
+    }
+    .primary-button{
+        @apply my-3 py-2 px-2 bg-naranja bg-opacity-100 text-white rounded-md transition ease-linear hover:bg-opacity-90
+    }
+    .sitemap-link{
+        @apply py-1 border-b-2 border-naranja border-opacity-0 transition ease-linear hover:border-opacity-100 md:text-lg
+    }
+} 
+
+@layer utilities{
+    .menu-visible{
+        @apply visible opacity-100 transition-opacity duration-200 ease-linear
+    }
+    .menu-hidden{
+        @apply invisible opacity-0 transition-all duration-200 ease-linear
+    }
+    .section__subtitle{
+        @apply text-base font-medium text-naranja sm:text-xl
+    }
+    .gallery--image{
+        @apply sm:object-cover sm:w-full sm:h-full
+    }
+}

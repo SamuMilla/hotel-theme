@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- swiper styles -->
+    <link rel="stylesheet" href="./dist/vendor/css/swiper-bundle.min.css">
+    <!-- CSS custom styles -->
+    <link rel="stylesheet" href="./dist/styles.css">
+
+    <!-- js files -->
+    <script src="/dist/vendor/js/scrollreveal.min.js" defer></script>
+    <script src="/dist/vendor/js/swiper-bundle.min.js" defer></script>
+    <script src="/src/script.js" defer></script>
+    <title>Hotel Website</title>
+</head>
+<body class="font-poppins bg-gris-light">
+    <div class="bg-hero bg-no-repeat bg-cover object-cover bg-center bg-gray-500 bg-blend-multiply">
+            <header class="w-full">
+                <nav>
+                    <div class="container flex justify-between items-center py-3">
+                        <h2 class="text-xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-naranja to-naranja-light">hotelink</h2>
+                        <div class="hidden md:block">
+                            <ul class="md:flex gap-5 text-white text-lg">
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#us">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#rooms">Rooms</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">Gallery</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="hidden primary-button my-0 md:inline-block">Book Now</a>
+                            <button onclick="menuToggle()" type="button" href="#" class="md:hidden" id="menu-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                  </svg>
+                            </button>
+                    </div>
+                </nav>
+                <!-- Mobile menu -->
+                <div class="w-10/12 rounded-md shadow-lg right-2/4 transform translate-x-2/4 absolute z-20 bg-white menu-hidden lg:hidden" id="mobile--menu">
+                    <div class="w-full h-full text-center text-gray-800 uppercase">
+                        <ul>
+                            <li class="relative pt-3">
+                                <a class="mobile-menu--link" href="#home" >Home</a>
+                            </li>
+                            <li class="relative pt-4">
+                                <a class="mobile-menu--link" href="#us">About Us</a>
+                            </li>
+                            <li class="relative pt-4">
+                                <a class="mobile-menu--link" href="#rooms">Rooms</a>
+                            </li>
+                            <li class="relative pt-4">
+                                <a class="mobile-menu--link" href="#gallery">Gallery</a>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block primary-button mobile-menu--link">contact</a>
+                    </div>
+                </div>
+            </header>
+    
+            <section id="home" class="container text-white pt-14 text-center pb-14">
+                <h1 class="home--header text-4xl font-bold tracking-wide md:text-5xl lg:mt-9">Make your vacations memorable</h1>
+                <div class="home--details">
+                    <p class="text-lg font-normal tracking-tighter w-8/12 mt-4 mx-auto md:text-xl">The best resort by the beach in Puerto Cortés</p>
+                    <div class="mt-9 w-full grid gap-3 sm:grid-flow-col max-w-lg lg:mx-auto">
+                        <div class="flex justify-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                              </svg>
+                            <p class="md:text-lg">Puerto Cortés, Cortés</p>
+                        </div>
+                        <div class="flex justify-center gap-1 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                              </svg>
+                            <p class="md:text-lg">Email</p>
+                        </div>
+                        <div class="flex justify-center gap-1 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                              </svg>
+                            <p class="lg:text-lg">Telephone</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="w-full relative">
+                <img src="/dist/img/curve.svg" alt="curve" class="inline">
+                <a href="#us" class="absolute bg-naranja-light text-naranja py-1 px-2 rounded-md right-2/4 transform translate-x-2/4 top-2/4 lg:text-xl">Know More</a>
+            </div>
+    </div>
+    <section id="us" class="py-12 md:py-16">
+        <div class="container grid">
+            <h2 class="section--title relative text-center text-2xl sm:text-3xl">Stay calm with<span class="absolute right-2/4 transform translate-x-2/4 -translate-y-2/4 -z-10 text-6xl sm:text-7xl text-gray-300 font-bold">Us</span></h2>
+            <div class="mt-11 md:grid md:grid-cols-2 md:gap-6 md:mt-14">
+                <!-- content -->
+                <div class="flex flex-col gap-6"> 
+                    <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-none text-naranja" viewBox="0 0 20 20" fill="currentColor">
+                             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                         </svg>
+                         <div class="flex-auto">
+                            <h3 class="section__subtitle">Qualified personal</h3>                      
+                            <p class="text-sm mt-2 leading-relaxed">We have everything you need so you can enjoy your vacation.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="/dist/img/icons/hotel.svg" alt="bedroom" class="h-6 w-6 flex-none text-naranja">
+                         <div class="flex-auto">
+                            <h3 class="section__subtitle">Quiet rooms</h3>                      
+                            <p class="text-sm mt-2 leading-relaxed">Good vacations relay on good sleep, that's why we make sure that you and your family rest well.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="/dist/img/icons/food.svg" alt="restaurant" class="h-6 w-6 flex-none text-naranja">
+                         <div class="flex-auto">
+                            <h3 class="section__subtitle">Premium Food</h3>                      
+                            <p class="text-sm mt-2 leading-relaxed">Enjoy our deliious food in the restaurant with your family.
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+                <!-- images -->
+                <div class="mt-9 grid gap-y-10 sm:grid-cols-2 sm:gap-10 md:mt-0 md:gap-3">
+                    <div class="us--img rounded-lg overflow-hidden shadow-lg md:h-5/6">
+                        <img src="/dist/img/staff.jpg" alt="staff" class="w-full h-auto object-cover sm:h-full">
+                    </div>
+                    <div class="us--img rounded-lg overflow-hidden shadow-lg md:h-5/6 md:flex md:self-end">
+                        <img src="/dist/img/lobby.jpg" alt="staff" class="w-full h-auto object-cover sm:h-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rooms" class="py-12">
+        <!-- rooms swiper -->
+        <div class="container">
+            <h2 class="section--title relative text-center text-2xl sm:text-3xl">Explore our<span class="absolute right-2/4 transform translate-x-2/4 -translate-y-2/4 -z-10 text-6xl sm:text-7xl text-gray-300 font-bold">Rooms</span></h2>
+                <!-- pev & next buttons -->
+                <div class="flex justify-end gap-3 mt-8">
+                    <button role="button" class="bg-naranja-light p-2 button--prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-naranja" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button role="button" class="bg-naranja-light p-2 button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-naranja" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- end pev & next buttons -->
+                <div class="swiper mySwiper mt-3">
+                    <div class="swiper-wrapper">
+                            <!-- slide 1 -->
+                        <div class="swiper-slide pb-5 ">
+                            <div class="rounded-md overflow-hidden shadow-lg sm:grid sm:grid-cols-2">
+                                <div>
+                                    <img src="/dist/img/room-one-bed.jpg" alt="room with one bed" class="sm:object-cover sm:h-full sm:w-full">
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl font-bold tracking-wide mt-6">Individual room</h3>
+                                    <p class="text-base">The perfect room for a quick business trip</p>
+                                    <!-- rooms specs -->
+                                    <div class="grid grid-cols-2 gap-x-1 gap-y-4 mt-6">
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                                                </svg>
+                                            </div>
+                                            <p>1-2</p>
+                                        </div>
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
+                                            <p>TV</p>
+                                        </div>
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                            <div>
+                                            <img src="/dist/img/icons/bed-empty.svg" alt="bed" class="h-5 w-5 inline-block">
+                                            </div>
+                                            <p>1 bed</p>
+                                        </div>
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.076-5.077 13.308-5.077 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM9 16a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
+                                            <p>Wifi</p>
+                                        </div>
+                                    </div>
+                                    <!-- price -->
+                                    <h4 class="text-2xl font-bold tracking-wide mt-7">80$<span class="text-base text-gray-600">/night</span></h4>
+                                    <a href="#" class="block primary-button uppercase text-center lg:block">book this room</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 1 -->
+                        <!-- slide 2 -->
+                        <div class="swiper-slide pb-5">
+                            <div class=" rounded-md overflow-hidden shadow-lg sm:grid sm:grid-cols-2">
+                                <div>
+                                    <img src="/dist/img/room-two-beds.jpg" alt="room with two bed" class="object-cover bg-center sm:h-full sm:w-full">
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl font-bold tracking-wide mt-6">Double room</h3>
+                                    <p class="text-base">Ideal room for a family vacation with plenty space</p>
+                                    <!-- rooms specs -->
+                                    <div class="grid grid-cols-2 gap-x-1 gap-y-4 mt-6">
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                                                </svg>
+                                            </div>
+                                            <p>2-4</p>
+                                        </div>
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+                                                </svg>
+                                        </div>
+                                        <p>TV</p>
+                                    </div>
+                                    <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                        <div>
+                                            <img src="/dist/img/icons/bed-empty.svg" alt="bed" class="h-5 w-5 inline-block">
+                                        </div>
+                                        <p>2 beds</p>
+                                    </div>
+                                    <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.076-5.077 13.308-5.077 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM9 16a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                                </svg>
+                                        </div>
+                                        <p>Wifi</p>
+                                    </div>
+                                    </div>
+                                    <!-- price -->
+                                    <h4 class="text-2xl font-bold tracking-wide mt-7">130$<span class="text-base text-gray-600">/night</span></h4>
+                                    <a href="#" class="block primary-button uppercase text-center lg:block">book this room</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 2 -->
+                        <!-- slide 3 -->
+                        <div class="swiper-slide pb-5">
+                            <div class="rounded-md overflow-hidden shadow-lg sm:grid sm:grid-cols-2">
+                                <div>
+                                    <img src="/dist/img/room-beach-window.jpg" alt="room with beach view" class="sm:object-cover sm:h-full sm:w-full">
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl font-bold tracking-wide mt-6">Room beach view</h3>
+                                    <p class="text-base">Enjoy the pretty beach view and relax with your family</p>
+                                    <!-- rooms specs -->
+                                    <div class="grid grid-cols-2 gap-x-1 gap-y-4 mt-6">
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                                                </svg>
+                                            </div>
+                                            <p>2-4</p>
+                                        </div>
+                                        <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+                                                </svg>
+                                        </div>
+                                        <p>TV</p>
+                                    </div>
+                                    <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                        <div>
+                                            <img src="/dist/img/icons/bed-empty.svg" alt="bed" class="h-5 w-5 inline-block">
+                                        </div>
+                                        <p>2 beds</p>
+                                    </div>
+                                    <div class="flex gap-2 w-10/12 items-center justify-center px-2 py-1 bg-gray-300 text-gray-600 rounded-md">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.076-5.077 13.308-5.077 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM9 16a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                                </svg>
+                                        </div>
+                                        <p>Wifi</p>
+                                    </div>
+                                    </div>
+                                    <!-- price -->
+                                    <h4 class="text-2xl font-bold tracking-wide mt-7">130$<span class="text-base text-gray-600">/night</span></h4>
+                                    <a href="#" class="block primary-button uppercase text-center lg:block">book this room</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 3 -->
+                    </div>
+                </div>
+            
+            <!-- <div class="swiper-button-next top-[100%] h-4 w-4"></div>
+            <div class="swiper-button-prev top-[100%] h-4 w-4"></div> -->
+        </div>
+        <!-- end rooms swiper -->
+    </section>
+    <section id="gallery" class="py-12 md:py-16">
+        <div class="container">
+            <h2 class="section--title relative text-center text-2xl sm:text-3xl ">See our<span class="absolute right-2/4 transform translate-x-2/4 -translate-y-2/4 -z-10 text-6xl sm:text-7xl text-gray-300 font-bold">Gallery</span></h2>
+           <div class="grid md:grid-cols-2 md:gap-6 md:mt-9">
+               <div>
+                   <h3 class="font-medium text-lg mt-8 sm:text-2xl">We have</h3>
+                    <div class="flex flex-col gap-6 mt-3 lg:mt-6">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-none text-naranja" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                              </svg>
+                             <div class="flex-auto">
+                                <h3 class="section__subtitle">Private parking</h3>
+                                <p class="text-sm mt-2 leading-relaxed sm:text-lg md:max-w-[80%]">Dont worry about finding a spot to park in the city, we have you covered.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="/dist/img/icons/hotel.svg" alt="bedroom" class="h-6 w-6 flex-none text-naranja">
+                             <div class="flex-auto">
+                                <h3 class="section__subtitle">Pool</h3>
+                                <p class="text-sm mt-2 leading-relaxed sm:text-lg md:max-w-[80%]">Nothing more relaxing and funny than spending a day in our awesome pool.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-none text-naranja" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                              </svg>
+                             <div class="flex-auto">
+                                <h3 class="section__subtitle">Security</h3>
+                                <p class="text-sm mt-2 leading-relaxed sm:text-lg md:max-w-[80%]">Don't worry about your security, we make sure that you stay relaxed and enjoy your vacations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <div class="mt-8 grid gap-y-2 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-3">
+                    <div><img src="/dist/img/pool1.png" alt="pool" class="gallery--image"></div>
+                    <div><img src="/dist/img/conference-room.jpg" alt="conference rooom" class="gallery--image"></div>
+                    <div><img src="/dist/img/lobby2.jpg" alt="second lobby" class="gallery--image"></div>
+                    <div><img src="/dist/img/parking.jpg" alt="private parking" class="gallery--image"></div>
+                    <div class="sm:col-span-2"><img src="/dist/img/pool2.jpg" alt="second pool" class="gallery--image"></div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <section id="testimonials" class="py-12 md:py-16">
+        <div class="container">
+            <h2 class="section--title relative text-center text-2xl sm:text-3xl tracking-tighter">What our customers say<span class="absolute right-2/4 transform translate-x-2/4 -translate-y-2/4 -z-10 text-5xl text-gray-300 font-bold tracking-tighter">Testimonials</span></h2>
+            <div class="mt-8 grid gap-y-4 md:grid-cols-2 md:gap-7 md:mt-20">
+                <!-- testimonial 1 -->
+                <div class="rounded-lg shadow-lg overflow-hidden  sm:grid sm:grid-cols-2 md:gap-4">
+                    <div class="relative">
+                        <img src="/dist/img/testimonial1.png" class="border-b-8 border-solid border-gray-500 md:object-cover md:h-full" alt=" female happy customer">
+                        <div class="rounded-full p-2 bg-naranja-light inline-block absolute top-4 left-3">
+                            <img src="/dist/img/icons/quote-icon.svg" alt="quotes icon" class="inline-block h-5 w-5">
+                        </div>
+                    </div>
+                    <div class="py-4 px-2 sm:self-center">
+                        <blockquote>This hotel is the best place to spend a family vacation</blockquote>
+                        <h4 class="font-bold text-xl mt-5">Sara</h4>
+                        <p class="text-base text-gray-400">Mother</p>
+                    </div>
+                </div>
+                <!--end testimonial 1 -->
+                <!-- testimonial 2 -->
+                <div class="rounded-lg shadow-lg overflow-hidden sm:grid sm:grid-cols-2 md:gap-4">
+                    <div class="relative">
+                        <img src="/dist/img/testimonial2.png" class="border-b-8 border-solid border-gray-500 md:object-cover md:h-full" alt="male happy customer">
+                        <div class="rounded-full p-2 bg-naranja-light inline-block absolute top-4 left-3">
+                            <img src="/dist/img/icons/quote-icon.svg" alt="quotes icon" class="inline-block h-5 w-5">
+                        </div>
+                    </div>
+                    <div class="py-4 px-2 sm:self-center">
+                        <blockquote>Best vacations I ever had</blockquote>
+                        <h4 class="font-bold text-xl mt-5">John</h4>
+                        <p class="text-base text-gray-400">Businessman</p>
+                    </div>
+                </div>
+                <!--end testimonial 2 -->
+                <!-- testimonial 3 -->
+                <div class="rounded-lg shadow-lg overflow-hidden sm:grid sm:grid-cols-2 md:gap-4 md:col-span-2 md:max-w-[50%] md:mx-auto">
+                    <div class="relative">
+                        <img src="/dist/img/testimonial3.png" class="border-b-8 border-solid border-gray-500 md:object-cover md:h-full" alt="male happy customer">
+                        <div class="rounded-full p-2 bg-naranja-light inline-block absolute top-4 left-3">
+                            <img src="/dist/img/icons/quote-icon.svg" alt="quotes icon" class="inline-block h-5 w-5">
+                        </div>
+                    </div>
+                    <div class="py-4 px-2 sm:self-center">
+                        <blockquote>I came stressed, and leave relaxed</blockquote>
+                        <h4 class="font-bold text-xl mt-5">David</h4>
+                        <p class="text-base text-gray-400">Frequent Customer</p>
+                    </div>
+                </div>
+                <!--end testimonial 3 -->
+
+            </div>
+        </div>
+    </section>
+    <div class="bg-naranja py-12">
+        <div class="container text-white">
+            <p class="text-xl">Ready for some unforgettable vacations?</p>
+            <a href="#contact" class="primary-button uppercase text-xl bg-naranja-light text-naranja block text-center mt-8 md:inline-block md:max-w-[50%]">book now <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-naranja inline-block ml-3" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            </a>
+        </div>
+    </div>
+    <section id="contact" class="py-12 mt-6 md:py-16">
+        <div class="container">
+            <h2 class="section--title relative text-center text-2xl sm:text-3xl tracking-tighter">Book a room or get in<span class="absolute right-2/4 transform translate-x-2/4 -translate-y-2/4 -z-10 text-6xl sm:text-7xl text-gray-300 font-bold tracking-tighter">Contact</span></h2>
+            <form method="get" class="grid gap-y-4 mt-8 sm:grid-cols-2 sm:gap-5 lg:gap-y-12 lg:gap-x-16 lg:mt-11">
+                <div>
+                    <label class="block text-base mb-1 " for="name">Your name</label>
+                    <input class="p-2 focus:outline-none w-full" type="text" name="name" id="name" required placeholder="Your name">
+                </div>
+                <div>
+                    <label class="block text-base mb-1 " for="email">Your email</label>
+                    <input class="p-2 focus:outline-none w-full" type="email" name="email" id="email" required placeholder="Your email">
+                </div>
+                <div>
+                    <label class="block text-base mb-1 " for="phone">Your phone</label>
+                    <input class="p-2 focus:outline-none w-full" type="tel" name="phone" id="phone" required placeholder="Your phone">
+                </div>
+                <div>
+                    <label class="block text-base mb-1 " for="arrival">Arrival</label>
+                    <input class="p-2 focus:outline-none w-full" type="date" name="arrival" id="arrival" required placeholder="Arrival date">
+                </div>
+                <div>
+                    <label class="block text-base mb-1 " for="departure">Departure</label>
+                    <input class="p-2 focus:outline-none w-full" type="date" name="departure" id="departure" required placeholder="Departure date">
+                </div>
+                <div>
+                    <label class="block text-base mb-1 " for="select-rooms">Select room type</label>
+                    <select name="rooms" id="select-rooms" class="p-2 focus:outline-none w-full">
+                        <option value="individual-room">Individual room</option>
+                        <option value="double-room">Double room</option>
+                        <option value="beach-view-room">Room with view to the beach</option>
+                    </select>
+                </div>
+            </form>
+            <input type="submit" value="Book now!" class="primary-button block w-full mt-4 sm:mt-7 md:max-w-[50%] md:mx-auto lg:max-w-[25%] lg:mt-12" >
+        </div>
+    </section>
+    <footer id="footer" class="pt-12 pb-3 bg-white">
+        <div class="container">
+            <div class="grid sm:grid-cols-2">
+                <h2 class="text-xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-naranja to-naranja-light text-center md:text-2xl">hotelink</h2>
+                <div class="py-3 sm:py-0 sm:pb-3">
+                    <p class="text-xl text-gray-500 md:text-2xl">Sitemap</p>
+                    <div class="mt-1">
+                        <ul class="text-sm grid gap-y-3 sm:grid-cols-2">
+                            <li><a href="#home" class="sitemap-link">Home</a></li>
+                            <li><a href="#us" class="sitemap-link">About Us</a></li>
+                            <li><a href="#rooms" class="sitemap-link">Rooms</a></li>
+                            <li><a href="#gallery" class="sitemap-link">Gallery</a></li>
+                            <li><a href="#testimonials" class="sitemap-link">Testimonials</a></li>
+                            <li><a href="#contact" class="sitemap-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center lg:mt-6">
+                <p class="text-gray-400">Hotelink 2021 <span>All rights reserved &copy;</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="/dist/vendor/js/scrollreveal.min.js"></script>
+    <script src="/dist/vendor/js/swiper-bundle.min.js"></script>
+    <script src="/src/script.js"></script> -->
+</body>
+</html>
