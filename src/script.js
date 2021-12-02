@@ -59,4 +59,4 @@ const sr = ScrollReveal({
 sr.reveal('.home--header, .section--title', {delay: 500});
 sr.reveal('.home--details, .rooms--container', {delay: 600});
 
-sr.reveal('.gallery--image', {origin: 'bottom', interval: 100});
+sr.reveal('.gallery--image, .us--img',  {origin: 'bottom', interval: 100});
